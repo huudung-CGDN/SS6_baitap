@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Điểm Trung Bình</title>
+</head>
+<body>
+<h2>Tính Điểm Trung Bình</h2>
+vật lý <input type="number" name="number" " id="a">
+Hóa học <input type="number" name="number" " id="b">
+Sinh học <input type="number" name="number" " id="c">
+<button onclick="tinhDiemTrungBinh()">diem TB</button>
+<button onclick="diemTong()">diem Tong</button>
+<p id="result"></p>
+<script>
+
+    function tinhDiemTrungBinh() {
+        let doA = +document.getElementById("a").value;
+        let doB = +document.getElementById("b").value;
+        let doC = +document.getElementById("c").value;
+        let doTb = (doA + doB + doC)/3
+        document.getElementById("result").innerHTML = "result: "+doTb;
+    }
+
+</script>
+<script>
+    function diemTong() {
+        let doA = +document.getElementById("a").value;
+        let doB = +document.getElementById("b").value;
+        let doC = +document.getElementById("c").value;
+        let doT = (doA + doB + doC)
+        document.getElementById("result").innerHTML = "result: " + doT;
+    }
+</script>
+
+
+</body>
+</html>
