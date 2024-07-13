@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h2>chuyển đổi tiền tệ</h2>
+<body>
+<input type="number" name="giaTien" id="r">
+<select name="" id="c">
+    <option value="a">VND</option>
+    <option value="b">USA</option>
+</select>
+<select name="" id="e">
+    <option value="a">VND</option>
+    <option value="b">USA</option>
+</select>
+<button onclick="submit()">submit</button>
+<p id="result :"></p>
+<script>
+    function  submit() {
+        let R = document.getElementById('r').value;
+        let C = document.getElementById('c').value;
+        let E = document.getElementById('e').value;
+        if (C == E) {
+            alert(R);
+        }
+        if (C === "a" && E === "b") {
+            alert(R / 24000);
+        }
+    }
+</script>
+</body>
+</html>
