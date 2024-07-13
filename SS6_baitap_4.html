@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h2>công thức tính chu vi hình tròn</h2>
+<body>
+<p>đường kính</p>
+<input type="number" name="duongKinh" id="d">
+<button onclick="cvHinhTron()">cvHinhTron</button>
+<p id="result :"></p>
+<script>
+    function cvHinhTron() {
+        let r = Math.PI;
+        let D = +document.getElementById("d").value;
+        let cvHinhTron = D*r
+        document.getElementById("result :").innerHTML = "result :" + cvHinhTron
+    }
+</script>
+
+</body>
+</html>
